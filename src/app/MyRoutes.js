@@ -1,6 +1,5 @@
 import React from "react";
 import { Route } from "react-router-dom";
-
 import * as routes from "./constants/routes";
 import Landing from "./view/Landing";
 import Login from "./view/Login";

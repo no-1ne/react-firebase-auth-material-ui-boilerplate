@@ -12,6 +12,8 @@ import AuthUserContext from "./AuthUserContext";
 const WithAuthenticationAuthorization = (Component, accessType = null) => {
   class withAuthenticationAuthorization extends React.Component {
     componentDidMount() {
+      //fired when auth state changes
+      //redirect to login page if authUser is null
       firebase.auth().onAuthStateChanged(authUser => {
         if (!authUser) {
           this.props.history.push(routes.LOGIN, {

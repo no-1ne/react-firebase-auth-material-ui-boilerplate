@@ -15,7 +15,7 @@ export default ({ data }) => {
         <DialogTitle id="alert-dialog-title">{data.title}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            {`Current version :${data.browserName}  ${data.version}`}
+            {`Currently using ${data.browserName} ${data.version}`}
           </DialogContentText>
           <DialogContentText id="alert-dialog-description">
             {data.content}

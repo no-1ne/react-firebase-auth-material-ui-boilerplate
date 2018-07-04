@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-
 import MyRoutes from "./MyRoutes";
-
-import initAuthentication from "./common/security/initAuthentication";
-
+import initAuthenticationAuthorization from "./common/security/initAuthenticationAuthorization";
 import { BrowserRouter as Router } from "react-router-dom";
 import Layout from "./Layout";
 
@@ -19,4 +16,4 @@ class App extends Component {
   }
 }
 
-export default initAuthentication(App);
+export default initAuthenticationAuthorization(App);

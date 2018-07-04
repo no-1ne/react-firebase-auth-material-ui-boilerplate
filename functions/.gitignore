@@ -16,19 +16,16 @@
 .env.test.local
 .env.production.local
 
-
 #firebase config files
 .firebaserc
 firebase.json
 firestore.indexes.json
 firestore.rules
-database.rules.json
-storage.rules
+
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-extra
-/.vscode
+/lib
 package-lock.json
