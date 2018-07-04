@@ -16,7 +16,7 @@ exports.sendNotification = functions.https.onRequest(
     };
     const tokenRefs = await admin
       .firestore()
-      .collection("tokens")
+      .collection("PushNotificationTokens")
       .get();
     tokenRefs.docs.map(doc => {
       allTokens = [...allTokens, ...[doc.data().token]];

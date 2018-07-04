@@ -3,13 +3,13 @@ import ReactDOM from "react-dom";
 import firebase from "firebase/app";
 import "firebase/app";
 import "firebase/firestore";
-import { firebaseConfig } from "./app/constants/firebaseConfig";
+import { firebaseConfig } from "./app/config/firebaseConfig";
 import App from "./app/App";
 import registerServiceWorker from "./registerServiceWorker";
 import {
   checkBrowserCompatibility,
   getBrowserDetails
-} from "./app/common/util/browserDetails";
+} from "./app/common/util/userAgent";
 import { browser_config } from "./app/constants/browserRequirement";
 import AlertDialog from "./app/common/AlertDialog";
 import "./index.css";
